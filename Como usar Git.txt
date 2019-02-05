@@ -1,3 +1,5 @@
 primero: git clone "link"
-segundo C TAB  git add .
-tercero git commit -m "comentario del commit"
+- agregar y editar un archivo
+segundo C TAB  git add . (crea el archivo git)
+tercero git commit -m "comentario del commit"  (seria el // de el git)
+cuarto git push (usuario y contraseña) (sube el archivo)
