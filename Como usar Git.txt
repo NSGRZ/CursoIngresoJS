@@ -1,0 +1,3 @@
+primero: git clone "link"
+segundo C TAB  git add .
+tercero git commit -m "comentario del commit"
