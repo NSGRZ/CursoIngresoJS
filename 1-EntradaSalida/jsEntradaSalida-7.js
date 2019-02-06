@@ -3,15 +3,18 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
-{	
+{	//ingreso variables
 	var primerNumero;
 var segundoNumero;
 var suma;
+//les asigno los valores a las variables, en este caso tambien las hago numericas
 primerNumero = numeroUno.value;
 primerNumero = parseInt(primerNumero);
 segundoNumero = numeroDos.value;
 segundoNumero = parseInt(segundoNumero);
+//realizo una accion entre las variables
 suma = primerNumero + segundoNumero;
+// muestro la accion entre las variables 
 alert("la suma es :" + suma);
 }
 
