@@ -6,7 +6,8 @@ function mostrar()
 {
 var nombre; 
 	nombre = prompt("ingrese nombre :");
-   elNombre.value = nombre ;
-   alert("el dato se modifico")
+   //elNombre ; representa lo mismo document.getElementById("elNombre")
+   //document.getElementById("elNombre") dame un elemento por el id (este funciona en todos los exploradores)
+   document.getElementById("elNombre").value = nombre
 }
 
