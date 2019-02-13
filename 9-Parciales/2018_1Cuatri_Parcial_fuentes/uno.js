@@ -1,24 +1,21 @@
-
 function mostrar()
 {
-alert("Veamos quienes son");
-var NombreUno;
-var NombreDos;
-var EdadUno;
-var EdadDos;
+var procentaje;
+var monto;
 var resultado;
+var resultadoA
+procentaje = 1.1
+monto = prompt("ingrese el descuento");
 
- NombreUno = prompt("Ingrese el nombre");
- NombreDos = prompt("Ingrese el nombre");
- EdadUno = prompt("Ingrese la edad");
- EdadDos = prompt("Ingrese la edad");
- EdadUno = parseInt(EdadUno);
- EdadDos = parseInt(EdadDos);
- resultado = EdadDos+EdadUno
- alert("ustedes son "+NombreUno+" y "+NombreDos+" sus edades son "+EdadUno+" y "+EdadDos+" y la suma de sus edades es "+resultado);
 
+monto = parseInt(monto);
+
+resultadoA = monto*procentaje/100;
+
+resultado = monto-resultadA;
+
+elPrecioFinal.value = resultado; 
+alert("El precio del producto en efectivo es$ "+monto+" con tarjeta tiene un recargo del 10% que seria "+resultadoA+)
 }
-
-
-
-//alert("ustedes son X y X sus edades son xx y xx y la suma de sus edades es")
+//alert("el precio del producto en efectivo es $XXXXXX con 
+//tarjeta tiene un recargo del 10% que seria $XX de recargo ,costandole final $XXX)
