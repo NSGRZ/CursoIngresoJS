@@ -1,15 +1,24 @@
 
 function mostrar()
 {
-alert("Busquemos el perimetro de un rectangulo");
-var ancho;
-var largo;
+alert("Veamos quienes son");
+var NombreUno;
+var NombreDos;
+var EdadUno
+var EdadDos
 var resultado;
 
- ancho = prompt("Ingrese el ancho en metros");
- largo = prompt("Ingrese el largo en metros");
- ancho = parseInt(ancho);
- largo = parseInt(largo);
- resultado = ancho*largo;
- alert("el perimetro es :"+resultado);
+ NombreUno = prompt("Ingrese el nombre");
+ NombreUno = prompt("Ingrese el nombre");
+ EdadUno = prompt("Ingrese la edad");
+ EdadDos = prompt("Ingrese la edad");
+ EdadUno = parseInt(EdadUno);
+ EdadDos = parseInt(EdadDos);
+ resultado = EdadDos+EdadUno
+ alert("ustedes son "+NombreUno+" y "+NombreDos+" sus edades son "+EdadUno+" y "+EdadDos+" y la suma de sus edades es "+resultado);
+
 }
+
+
+
+//alert("ustedes son X y X sus edades son xx y xx y la suma de sus edades es")
