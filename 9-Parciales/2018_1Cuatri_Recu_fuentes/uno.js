@@ -1,15 +1,15 @@
 
 function mostrar()
 {
-alert("Busquemos el perimetro de un rectangulo");
-var ancho;
-var largo;
+alert("Busquemos el area de un trigangulo");
+var Base;
+var Altura;
 var resultado;
 
- ancho = prompt("Ingrese el ancho en metros");
- largo = prompt("Ingrese el largo en metros");
- ancho = parseInt(ancho);
- largo = parseInt(largo);
- resultado = ancho*largo;
- alert("el perimetro es :"+resultado);
+ Altura = prompt("Ingrese Altura en metros");
+ Base = prompt("Ingrese el Base en metros");
+ Altura = parseInt(Altura);
+ Base = parseInt(Base);
+ resultado = (Altura*Base)/2;
+ alert("el area de el triangulo es :"+resultado);
 }
