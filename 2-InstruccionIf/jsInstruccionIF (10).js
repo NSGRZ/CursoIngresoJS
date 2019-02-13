@@ -7,12 +7,12 @@ function mostrar()
 	
     alert(Numerito); 
 	if (Numerito >8)
-		alert("EXCELENTE");
-	{else
-			{if(Numerito >3)
-							alert("APROBÓ");}
+		{alert("EXCELENTE");}
+	else
+			if(Numerito >3)
+							{alert("APROBÓ");}
 			else
-				{if(Numerito <4)
-									alert("Vamos, la proxima se puede" );}
-	}
+				if(Numerito <4)
+									{alert("Vamos, la proxima se puede" );}
+	
 }//FIN DE LA FUNCIÓN
