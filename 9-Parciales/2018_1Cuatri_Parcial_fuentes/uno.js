@@ -4,12 +4,12 @@ function mostrar()
 alert("Veamos quienes son");
 var NombreUno;
 var NombreDos;
-var EdadUno
-var EdadDos
+var EdadUno;
+var EdadDos;
 var resultado;
 
  NombreUno = prompt("Ingrese el nombre");
- NombreUno = prompt("Ingrese el nombre");
+ NombreDos = prompt("Ingrese el nombre");
  EdadUno = prompt("Ingrese la edad");
  EdadDos = prompt("Ingrese la edad");
  EdadUno = parseInt(EdadUno);
