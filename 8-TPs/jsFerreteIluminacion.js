@@ -58,12 +58,12 @@ else
 	}
 
 
-if(CantidadLamparitas==4 && Marca.value == "ArgentinaLuz" &&  "FelipeLamparas" )
+if(CantidadLamparitas==4 && Marca.value == "ArgentinaLuz" ||Marca.value =="FelipeLamparas" )
 														{precioFinal=cuenta*0.25
 													    precioFinal= cuenta-precioFinal
 														precioDescuento.value=precioFinal+" "+"D"}
 	else 
-		{if(CantidadLamparitas==4 && Marca.value != "ArgentinaLuz" && Marca.value != "FelipeLamparas" )
+		{if(CantidadLamparitas==4 && Marca.value != "ArgentinaLuz" ||Marca.value != "FelipeLamparas" )
 			        
 			       { precioFinal=cuenta*0.20
 					    precioFinal= cuenta-precioFinal
