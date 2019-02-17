@@ -6,9 +6,95 @@ C.	Si compra 4  lamparitas bajo consumo marca "ArgentinaLuz" o “FelipeLamparas
 D.	Si compra 3  lamparitas bajo consumo marca "ArgentinaLuz"  el descuento es del 15%, si es  “FelipeLamparas” se hace un descuento del 10 % y si es de otra marca un 5%.
 E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de ingresos brutos en informar del impuesto con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
-
  */
+ /*Marca.value
+ ArgentinaLuz
+ FelipeLamparas
+ JeLuz
+ HazIluminacion
+ Osram
+ precioDescuento.value*/
 function CalcularPrecio () 
 {
- 	
+ 	var CantidadLamparitas
+ 	var PrecioLamparita
+ 	var precioFinal
+ 	var cuenta
+
+ 	PrecioLamparita = 35
+ 	CantidadLamparitas=Cantidad.value
+ 	CantidadLamparitas=parseInt(CantidadLamparitas)
+ 	precioFinal=parseInt(precioFinal)
+ 	cuenta=parseInt(cuenta)
+ 	cuenta=PrecioLamparita*CantidadLamparitas
+
+
+if(CantidadLamparitas>=6)//si cantidad de lamparitas mayor a 5
+	{
+		    precioFinal=cuenta*0.5
+		    precioFinal= cuenta-precioFinal
+		    precioDescuento.value=precioFinal+" "+"A"}
+		    
+
+	 /*else	if(CantidadLamparitas<6)
+	 		 	 {	 	{precioFinal=PrecioLamparita*CantidadLamparitas
+	 		 	 	 		alert(precioFinal)}*/
+	 		 	 	 	 		 	
+
+	 		 	 	 
+
+	 		 	  
+if(CantidadLamparitas==5 && Marca.value == "ArgentinaLuz" )
+	{precioFinal=cuenta*0.4
+		    precioFinal= cuenta-precioFinal
+		//precioFinal=precioFinal-cuenta
+		precioDescuento.value=precioFinal+" "+"B"
+	}
+else 
+	{if(CantidadLamparitas==5 && Marca.value != "ArgentinaLuz")
+	{precioFinal=cuenta*0.3
+		    precioFinal= cuenta-precioFinal
+		precioDescuento.value=precioFinal+" "+"b"}
+	}
+
+
+if(CantidadLamparitas==4 && Marca.value == "ArgentinaLuz" &&  "FelipeLamparas" )
+														{precioFinal=cuenta*0.25
+													    precioFinal= cuenta-precioFinal
+														precioDescuento.value=precioFinal+" "+"D"}
+	else 
+		{if(CantidadLamparitas==4 && Marca.value != "ArgentinaLuz" && Marca.value != "FelipeLamparas" )
+			        
+			       { precioFinal=cuenta*0.20
+					    precioFinal= cuenta-precioFinal
+			               precioDescuento.value=precioFinal+" "+"d"}}
+	     
+if(CantidadLamparitas==3 && Marca.value == "ArgentinaLuz")
+	
+	{precioFinal=cuenta*0.15
+		    precioFinal= cuenta-precioFinal
+			precioDescuento.value=precioFinal+" "+"F"
+	}
+else 
+	
+{if(CantidadLamparitas==3 &&  Marca.value == "FelipeLamparas" )
+	{        
+		       { precioFinal=cuenta*0.10
+		    precioFinal= cuenta-precioFinal
+		               precioDescuento.value=precioFinal+" "+"G"}}
+	               else
+	               {	if(CantidadLamparitas==3 && Marca.value != "ArgentinaLuz" && Marca.value != "FelipeLamparas")
+	                   					{precioFinal=cuenta*0.05
+		    							 precioFinal= cuenta-precioFinal
+	                   						 precioDescuento.value=precioFinal+" "+"H"}}}
+        if(precioFinal>120)
+	 		 	 	 	{	
+	 		 	 	 		var IIBB
+	 		 	 	 		IIBB=parseInt(IIBB)
+	 		 	 	 		IIBB=precioFinal*10/100
+	 		 	 	 		precioFinal=IIBB+precioFinal
+	 		 	 	 		alert("IBB ES DE : "+IIBB)
+	 		 	 	 		alert(" Usted pago : "+precioFinal+" CON IIBB incluido")
+	 		 	 	 	 	 }
+
 }
