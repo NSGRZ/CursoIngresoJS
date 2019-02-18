@@ -11,21 +11,24 @@ var numeroSecreto;
 var contadorIntentos;
 
 function comenzar()
-{
+{	
 	var NumeroIngresado
 		NumeroIngresado=numero.value
 	numeroSecreto=Math.floor((Math.random() * 100) + 1);
 	console.log(numeroSecreto)
-
-
+	contadorIntentos=0
+	
+	 
+   
 }
 
 function verificar()
-{
+{	
 	if(numero.value==numeroSecreto)
 		{alert("Ganaste")}
 	else
-		{alert("No Ganaste")}
-	
-	
+		{alert("No Ganaste")
+		contadorIntentos=contadorIntentos+1
+		intentos.value=contadorIntentos
+	}
 }
