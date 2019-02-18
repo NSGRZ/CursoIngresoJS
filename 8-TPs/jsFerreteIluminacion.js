@@ -27,6 +27,8 @@ function CalcularPrecio ()
  	precioFinal=parseInt(precioFinal)
  	cuenta=parseInt(cuenta)
  	cuenta=PrecioLamparita*CantidadLamparitas
+ 	precioFinal=cuenta
+ 	precioDescuento.value=precioFinal
 
 
 if(CantidadLamparitas>=6)//si cantidad de lamparitas mayor a 5
