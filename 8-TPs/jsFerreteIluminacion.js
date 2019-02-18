@@ -33,7 +33,7 @@ if(CantidadLamparitas>=6)//si cantidad de lamparitas mayor a 5
 	{
 		    precioFinal=cuenta*0.5
 		    precioFinal= cuenta-precioFinal
-		    precioDescuento.value=precioFinal+" "+"A"}
+		    precioDescuento.value=precioFinal+" "+"descuento del 50%"}
 		    
 
 	 /*else	if(CantidadLamparitas<6)
@@ -48,20 +48,20 @@ if(CantidadLamparitas==5 && Marca.value == "ArgentinaLuz" )
 	{		precioFinal=cuenta*40/100
 		    precioFinal= cuenta-precioFinal
 			//precioFinal=precioFinal-cuenta
-			precioDescuento.value=precioFinal+" "+"B"
+			precioDescuento.value=precioFinal+" "+"descuento del 40%"
 	}
 else 
 	{if(CantidadLamparitas==5 && Marca.value != "ArgentinaLuz")
 	{		precioFinal=cuenta*30/100
 		    precioFinal= cuenta-precioFinal
-			precioDescuento.value=precioFinal+" "+"b"}
+			precioDescuento.value=precioFinal+" "+"descuento del 30%"}
 	}
 
 if(CantidadLamparitas==4 && Marca.value == "ArgentinaLuz")
 	
 	{		precioFinal=cuenta*25/100
 		    precioFinal= cuenta-precioFinal
-			precioDescuento.value=precioFinal+" "+"L"
+			precioDescuento.value=precioFinal+" "+"descuento del 25%"
 	}
 else 
 	
@@ -69,12 +69,12 @@ else
 	{        
 		       {	 	precioFinal=cuenta*25/100
 		   				 precioFinal= cuenta-precioFinal
-		               	precioDescuento.value=precioFinal+" "+"L"}}	
+		               	precioDescuento.value=precioFinal+" "+"descuento del 25%"}}	
 	               else
 	               {	if(CantidadLamparitas==4 && Marca.value != "ArgentinaLuz" && Marca.value != "FelipeLamparas")
 	                   					{precioFinal=cuenta*20/100
 		    							 precioFinal= cuenta-precioFinal
-	                   						 precioDescuento.value=precioFinal+" "+"l"}}}
+	                   						 precioDescuento.value=precioFinal+" "+"descuento del 20%"}}}
 
 /*if(CantidadLamparitas==4 && Marca.value == "ArgentinaLuz" ||"FelipeLamparas" )
 														{precioFinal=cuenta*25/100
@@ -91,7 +91,7 @@ if(CantidadLamparitas==3 && Marca.value == "ArgentinaLuz")
 	
 	{		precioFinal=cuenta*15/100
 		    precioFinal= cuenta-precioFinal
-			precioDescuento.value=precioFinal+" "+"F"
+			precioDescuento.value=precioFinal+" "+"descuento de 15%"
 	}
 else 
 	
@@ -99,12 +99,12 @@ else
 	{        
 		       {	 	precioFinal=cuenta*10/100
 		   				 precioFinal= cuenta-precioFinal
-		               	precioDescuento.value=precioFinal+" "+"f"}}	
+		               	precioDescuento.value=precioFinal+" "+"descuento de 10%"}}
 	               else
 	               {	if(CantidadLamparitas==3 && Marca.value != "ArgentinaLuz" && Marca.value != "FelipeLamparas")
 	                   					{precioFinal=cuenta*5/100
 		    							 precioFinal= cuenta-precioFinal
-	                   						 precioDescuento.value=precioFinal+" "+"F"}}}
+	                   						 precioDescuento.value=precioFinal+" "+"descuento de 5%"}}}
         if(precioFinal>120)
 	 		 	 	 	{	
 	 		 	 	 		var IIBB
