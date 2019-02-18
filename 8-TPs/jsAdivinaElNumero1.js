@@ -12,15 +12,20 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
+	var NumeroIngresado
+		NumeroIngresado=numero.value
+	numeroSecreto=Math.floor((Math.random() * 100) + 1);
+	console.log(numeroSecreto)
+
 
 }
 
 function verificar()
 {
+	if(numero.value==numeroSecreto)
+		{alert("Ganaste")}
+	else
+		{alert("No Ganaste")}
 	
 	
 }
