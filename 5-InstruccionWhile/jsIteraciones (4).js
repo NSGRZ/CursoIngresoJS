@@ -15,6 +15,6 @@ function mostrar()
 			}
 
 			}
-		Numero.value=numero
+		Numero.value=numero+" "+"numero validado"
 }//FIN DE LA FUNCIÓN
 //al presionar el botón pedir un número entre 0 y 9 inclusive.
