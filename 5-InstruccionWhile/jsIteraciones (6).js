@@ -3,7 +3,7 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-while(contador=0)//mientras contador sea 0
+while(contador==0)//mientras contador sea 0
 {contador=prompt("") //contador lo elige el usuario
  contador=parseInt(contador)
  if(contador>0) //si contador es mayor a 0
