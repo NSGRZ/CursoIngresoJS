@@ -1,6 +1,6 @@
 function mostrar()
 {
-var planetas
+/*var planetas
 planetas =prompt("ingrese artificios de el sistema solar")
 switch(planetas)
 {
@@ -26,12 +26,74 @@ switch(planetas)
 	break;
 
 }
-alert(Planetas);
+alert(Planetas);*/
+var MedioDePago
+MedioDePago=prompt("Escriba medio de pago,visa,paypal,mercadopago,efectivo,otro y escriba separado si desea el paquete desayuno o el paquete todo ")
+var habitacion
+habitacion=prompt("ingrese el monto de la habitacion")
+var Visa = 0.9
+var paypal = 0.85
+var mercadopago = 0.9
+var efectivo = 0.8
+var OtroMedio = 0.95
+var todoincluidoPaypal = 0.85
+var todoincluidoEfectivo = 0.75
+var soloDesayuno = 0.75
+var Resultado
+switch(MedioDePago)
+{
+	case  "efectivo"+"todo":
+	Resultado =habitacion*todoincluidoEfectivo 
+alert(Resultado)
+break;
+
+case "visa" :
+Resultado =habitacion-(habitacion*Visa/100) 
+alert(Resultado)
+break;
+case "paypal":
+Resultado =habitacion-(habitacion*paypal/100) 
+alert(Resultado)
+break;
+case "mercadopago":
+Resultado =habitacion-(habitacion*mercadopago/100) 
+alert(Resultado)
+break;
+case "efectivo":
+Resultado =habitacion-(habitacion*efectivo/100) 
+alert(Resultado)
+break;
+default:
+Resultado =habitacion-(habitacion*OtroMedio/100) 
+alert(Resultado)
+break;
+
+
+
+
 }
-/*Bienvenidos (SWITCH). 
-pedir el ingreso de un planeta del sistema solar 
-Si es la tierra mostrar "acá vivimos". 
-Si está más cerca del sol, "acá hace más calor". 
-Si está más lejos del sol, "acá hace más frio". 
-Si no es un planeta valido informarlo. 
-Aclaración: los planetas se ingresan en minúscula (Mercurio y Venus están antes que la tierra).*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*cada habitacion de un hotel tiene un precio,hay promociones segun el tipo de pago si es con
+ tarjeta visa un 10%
+su es por paypal un 15%
+por mercado pago 10%
+efectivo 20%
+cualquier otro medio 5%.
+si compraste el paquete "todo incluido"y pagas con paypal se te suma 10% al descuento
+
+si pagas en efectivo ,tenes varias opciones
+el paquete "soloDesayuno" te suma 10% de descuento al 20% anterior = 30%
+si es el paquete "todoincluido" te suma un 15% = 25%
+para el resto de los paquetes NO DESCUENTO ADICIONAL*/

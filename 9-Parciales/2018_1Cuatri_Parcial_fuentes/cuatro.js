@@ -39,10 +39,10 @@ else//si no
 if(NumeroUno>=NumeroDos ||NumeroUno>=NumeroTres||NumeroUno>=NumeroCuatro||NumeroUno==NumeroUno)
 	{alert(NumeroUno)}
 else
-	{if(NumeroDos>=NumeroTres ||NumeroDos>=NumeroCuatro)
+	{if(NumeroDos>=NumeroTres ||NumeroDos>=NumeroCuatro||NumeroDos==NumeroDos)
 		{alert(NumeroDos)}
 else
-	{if(NumeroTres>NumeroCuatro)
+	{if(NumeroTres>=NumeroCuatro||NumeroTres==NumeroTres)
 			{alert(NumeroTres)}
 	else
 		{if(NumeroCuatro==NumeroCuatro)
