@@ -31,11 +31,18 @@ switch(laHora)
 	case 17:
 	case 18:
 	case 19:
+	mensaje="es de tarde"
+	break;
 	case 20:
 	case 21:
 	case 22:
 	case 23:
-	case 00:
+	case 24:
+	mensaje="es de noche"
+	break;
+	default:
+	mensaje="la hora no existe"
+	break;
 	}
 	if(mensaje!="")
 	{alert(mensaje)}
