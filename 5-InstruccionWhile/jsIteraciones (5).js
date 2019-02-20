@@ -1,6 +1,6 @@
 function mostrar()
 {
-
+var sexo = prompt("ingrese f ó m .");
 
 /*var consola
 consola = "m"
@@ -28,12 +28,10 @@ while(sexo != "1" )
 
 
 }*/
-while(true)
-{var sexo = prompt("ingrese f ó m .");
-if(sexo == "f" ||sexo == "m")
-{break;}
-
-
+while(sexo != "f" && sexo != "m")
+{//var sexo = prompt("ingrese f ó m .");
+alert("error");
+sexo = prompt("ingrese f ó m .");
 }
 if(sexo == "f" )
 {sexo = "Femenino"}
