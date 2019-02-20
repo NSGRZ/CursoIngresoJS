@@ -14,15 +14,46 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
+	var NumeroIngresado
+		NumeroIngresado=numero.value
+	numeroSecreto=Math.floor((Math.random() * 100) + 1);
+	console.log(numeroSecreto)
+	contadorIntentos=0
 	 
 	
 
 }
 
 function verificar()
-{
+{					contadorIntentos=contadorIntentos+1
+					intentos.value=contadorIntentos
 	
-	
-
+		if(numero.value==numeroSecreto&&intentos.value ==1)
+		{alert("usted es un Psíquico")}
+		else	
+			{if(numeroSecreto==numero.value&&intentos.value ==2)
+				{alert("excelente percepción")}
+			else			
+				{if(numeroSecreto==numero.value&&intentos.value ==3)
+						{alert("Esto es suerte")}
+				else					
+					{if(numeroSecreto==numero.value&&intentos.value ==4)
+									{alert("Excelente técnica")}
+					else									
+						{if(numeroSecreto==numero.value&&intentos.value ==5)
+													{alert("usted está en la media")}
+						else
+							{
+								{if(numeroSecreto==numero.value&&intentos.value <=10)
+										{alert("falta técnica")}
+							else
+								{if(numeroSecreto==numero.value&&intentos.value >10)
+											{alert("afortunado en el amor!!")}
+							    }//else de mayor a 10
+							  }//else de menor a 10
+							}//else de 5
+						}//else de 4
+					}//else 3
+				}//else de ==2
+		}//else de ==1
 }

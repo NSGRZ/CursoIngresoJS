@@ -26,15 +26,19 @@ function verificar()
 {	
 	if(numero.value==numeroSecreto)
 		{alert("Ganaste")}
-	if(numeroSecreto>numero.value)
-				{alert("Te Falta ")
-					contadorIntentos=contadorIntentos+1
-					intentos.value=contadorIntentos}
-	if(numeroSecreto<numero.value)
-				{	alert("te pasaste")
-				contadorIntentos=contadorIntentos+1
-				intentos.value=contadorIntentos
-				}
+	else
+	{if(numeroSecreto>numero.value)
+					{alert("Te Falta ")
+						contadorIntentos=contadorIntentos+1
+						intentos.value=contadorIntentos}
+	else
+		{if(numeroSecreto<numero.value)
+							{	alert("te pasaste")
+							contadorIntentos=contadorIntentos+1
+							intentos.value=contadorIntentos
+							}
+						}//ganaste
+						}//falta
 									
 			
 	
