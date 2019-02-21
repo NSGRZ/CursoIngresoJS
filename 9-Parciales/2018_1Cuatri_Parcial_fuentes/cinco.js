@@ -28,37 +28,45 @@ switch(planetas)
 }
 alert(Planetas);*/
 var MedioDePago
-MedioDePago=prompt("Escriba medio de pago,visa,paypal,mercadopago,efectivo,otro y escriba separado si desea el paquete desayuno o el paquete todo ")
+MedioDePago=prompt("Escriba medio de pago:(visa,paypal,mercadopago,efectivo,otro) y escriba separado si desea el paquete desayuno escriba (desayuno) para el paquete Todo Incluido escriba (todo) ")
 var habitacion
 habitacion=prompt("ingrese el monto de la habitacion")
-var Visa = 0.9
-var paypal = 0.85
-var mercadopago = 0.9
-var efectivo = 0.8
-var OtroMedio = 0.95
-var todoincluidoPaypal = 0.85
-var todoincluidoEfectivo = 0.75
-var soloDesayuno = 0.75
+var Visa = 10
+var paypal = 15
+var mercadopago = 10
+var efectivo = 20
+var OtroMedio = 5
+var todoincluidoPaypal = 25
+var todoincluidoEfectivo = 35
+var soloDesayuno = 30
 var Resultado
 switch(MedioDePago)
 {
-	case  "efectivo"+"todo":
-	Resultado =habitacion*todoincluidoEfectivo 
+	case "paypal"+"todo":
+	Resultado =habitacion-(habitacion*todoincluidoPaypal/100)
+	alert(Resultado)
+break;
+
+case  "efectivo"+"desayuno":
+	Resultado =habitacion-(habitacion*soloDesayuno/100)
+alert(Resultado)
+break;
+
+case  "efectivo"+"todo":
+	Resultado =habitacion-(habitacion*todoincluidoEfectivo/100)
 alert(Resultado)
 break;
 
 case "visa" :
-Resultado =habitacion-(habitacion*Visa/100) 
+case "mercadopago":
+Resultado =habitacion-(habitacion*mercadopago/100) 
 alert(Resultado)
 break;
 case "paypal":
 Resultado =habitacion-(habitacion*paypal/100) 
 alert(Resultado)
 break;
-case "mercadopago":
-Resultado =habitacion-(habitacion*mercadopago/100) 
-alert(Resultado)
-break;
+
 case "efectivo":
 Resultado =habitacion-(habitacion*efectivo/100) 
 alert(Resultado)
@@ -91,7 +99,7 @@ su es por paypal un 15%
 por mercado pago 10%
 efectivo 20%
 cualquier otro medio 5%.
-si compraste el paquete "todo incluido"y pagas con paypal se te suma 10% al descuento
+si compraste el paquete "todo incluido"y pagas con paypal se te suma 10% al descuento = 25%
 
 si pagas en efectivo ,tenes varias opciones
 el paquete "soloDesayuno" te suma 10% de descuento al 20% anterior = 30%
