@@ -27,8 +27,9 @@ switch(planetas)
 
 }
 alert(Planetas);*/
+var parquete = prompt("ingrese el tipo de paquete (solo desayuno) o (todo incluido)")
 var MedioDePago
-MedioDePago=prompt("Escriba medio de pago:(visa,paypal,mercadopago,efectivo,otro) y escriba separado si desea el paquete desayuno escriba (desayuno) para el paquete Todo Incluido escriba (todo) ")
+MedioDePago=prompt("Escriba medio de pago:(visa,paypal,mercadopago,efectivo,otro)")
 var habitacion
 habitacion=prompt("ingrese el monto de la habitacion")
 var Visa = 10
@@ -40,40 +41,28 @@ var todoincluidoPaypal = 25
 var todoincluidoEfectivo = 35
 var soloDesayuno = 30
 var Resultado
+var porcentaje
 switch(MedioDePago)
 {
-	case "paypal"+"todo":
-	Resultado =habitacion-(habitacion*todoincluidoPaypal/100)
-	alert(Resultado)
-break;
 
-case  "efectivo"+"desayuno":
-	Resultado =habitacion-(habitacion*soloDesayuno/100)
-alert(Resultado)
-break;
-
-case  "efectivo"+"todo":
-	Resultado =habitacion-(habitacion*todoincluidoEfectivo/100)
-alert(Resultado)
-break;
 
 case "visa" :
 case "mercadopago":
-Resultado =habitacion-(habitacion*mercadopago/100) 
-alert(Resultado)
+
+porcentaje = mercadopago
 break;
 case "paypal":
-Resultado =habitacion-(habitacion*paypal/100) 
-alert(Resultado)
+
+switch()
+{}
 break;
 
 case "efectivo":
-Resultado =habitacion-(habitacion*efectivo/100) 
-alert(Resultado)
+switch()
+{}
 break;
 default:
-Resultado =habitacion-(habitacion*OtroMedio/100) 
-alert(Resultado)
+porcentaje = OtroMedio
 break;
 
 
@@ -84,7 +73,8 @@ break;
 
 
 
-
+Resultado =habitacion-(habitacion*porcentaje/100) 
+alert(Resultado)
 
 
 
