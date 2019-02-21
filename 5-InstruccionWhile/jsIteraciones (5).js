@@ -28,7 +28,7 @@ while(sexo != "1" )
 
 
 }*/
-while(sexo != "f" && sexo != "m")
+while(sexo != "f" && sexo != "m") //si tenemos mas, es lo mismo && != "otra cosa" acá se busca
 {//var sexo = prompt("ingrese f ó m .");
 alert("error");
 sexo = prompt("ingrese f ó m .");
