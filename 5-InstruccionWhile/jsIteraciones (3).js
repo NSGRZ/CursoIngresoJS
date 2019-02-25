@@ -1,13 +1,9 @@
 function mostrar()
 {
-var claveDos = prompt("ingrese usuario")
-while(clave != "utn750")
-{ var clave = prompt("Contraseña incorrecta,ingrese la clave nuevamente");}
-if(clave == "utn750")
-{ alert("bienvenido a la deepwep")}
+
+var clave = prompt("ingrese el número clave.");
+while(clave  != "utn750")
+{clave= prompt("CONTRASEÑA INCORRECTA,INGRESE LA CLAVE")}
+
+alert("bienvenido")
 }//FIN DE LA FUNCIÓN
-
-
-
-//Enunciado:
-//al presionar el botón pedir la CLAVE (ayuda: es utn750)

@@ -4,18 +4,17 @@ function mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	var Numero
-	var respuesta="si";
-while(respuesta== "si")
-{ Numero =prompt("ingrese un numero")
-	Numero =parseInt(Numero)
-	if (Numero<0) {
-		negativo=negativo*Numero
-	}
-	else
-		{positivo=positivo+Numero}
-respuesta=prompt("desea continuar?")
+	var numero;
+	var respuesta='si';
+while(respuesta =="si")
+{		numero=prompt("ingrese un numero");
+		numero=parseInt(numero);
+if(numero<0)
+{negativo=negativo*numero}
+else
+{positivo=positivo+numero}
 
+		respuesta=prompt("desea continuar?")
 }
 
 document.getElementById('suma').value=positivo;

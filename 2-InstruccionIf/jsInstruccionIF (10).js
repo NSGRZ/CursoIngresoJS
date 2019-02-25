@@ -1,18 +1,26 @@
 function mostrar()
 {
-	var Numerito; //ingreso la variable
-	var contador
-	Numerito = Math.floor((Math.random() * 10) + 1); //la variable tiene propiedad Aleatoria del  1 al 10
-	Numerito = parseInt(Numerito);
-	
-     
-	if (Numerito >8)
-		{alert("EXCELENTE la nota es : "+Numerito);}
-	else
-			{if(Numerito >3)
-							{alert("APROBÓ la nota es : "+Numerito);}
+	//Genero el número RANDOM entre 1 y 10 
+	var Numero
+	var contador=0
+	var Respuesta = "si"
+	while(Respuesta == "si")
+	{
+
+		Numero = Math.random()*10+1
+		Numero= parseInt(Numero)
+		if(Numero>8)
+			{alert("EXCELENTE")}
+		else
+			{if(Numero<4)
+			{alert("Vamos,la proxima se puede")}
 			else
-				if(Numerito <4)
-									{alert("Vamos, la proxima se puede tu nota es : "+Numerito );}}
+				{alert("APROBÓ")}
+		}
+
+Respuesta=prompt("desea continuar?")
+	}
+
 	
 }//FIN DE LA FUNCIÓN
+

@@ -2,15 +2,11 @@ function mostrar()
 {
 //tomo la edad  
 
-var Numero;
-Numero = edad.value;
-Numero = parseInt(Numero);//parsear sirve para comprar numeros,pero podemos comparar palabras
-//tomo la niña
-  
-if(Numero >17) //la llave va arriba para decirle a la maquina que la sentencia es del if
-{
-	alert("sos mayor de edad");
-}
+var Edad
+Edad = edad.value
+edad.value=""
+if(Edad >17)
+{edad.value = Edad+ " sos mayor de edad"}
 
 
 

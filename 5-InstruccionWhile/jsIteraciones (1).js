@@ -1,14 +1,12 @@
 function mostrar()
-{
-	var contador
-	contador=0
+{	
+	var contador=0
 	while(contador<10)
-	{ 
-		console.log(contador); //aqui muestra el producto mientras se trabaja el while pero con una interaccion menos
-		contador++
-		//alert(contador)
-		//console.log(contador);//console o alert dentro de el while para ver como evoluciona 
+	{
+		contador=contador+1;
+		console.log(contador)
 	}
-	alert(contador)//te muestra el producto final del el while
+	
 
-}//FIN DE LA FUNCIÓN
+
+}//FIN DE LA FUNCIÓN	al presionar el botón mostrar 10 repeticiones con números ASCENDENTE, desde el 1 al 10.
