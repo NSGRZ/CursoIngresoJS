@@ -36,18 +36,18 @@ else//si no
 		  }
 
 		}
-if(NumeroUno>=NumeroDos ||NumeroUno>=NumeroTres||NumeroUno>=NumeroCuatro||NumeroUno==NumeroUno)
-	{alert(NumeroUno)}
+if(NumeroUno>=NumeroDos &&NumeroUno>=NumeroTres&&NumeroUno>=NumeroCuatro) //forma correcta de conseguir el numero mas alto
+	{alert(NumeroUno)}														//el numero Y (&&) el otro numero y(&&) el otro
 else
-	{if(NumeroDos>=NumeroTres ||NumeroDos>=NumeroCuatro||NumeroDos==NumeroDos)
+	{if(NumeroDos>=NumeroTres &&NumeroDos>=NumeroCuatro)  //asi hasta que vayan quedando descartes
 		{alert(NumeroDos)}
 else
-	{if(NumeroTres>=NumeroCuatro||NumeroTres==NumeroTres)
+	{if(NumeroTres>=NumeroCuatro)
 			{alert(NumeroTres)}
-	else
-		{if(NumeroCuatro==NumeroCuatro)
+	else  //el ultimo en el ELSE por lo tanto el cuatro seria el mas alto
+		//{if(NumeroCuatro==NumeroCuatro)
 					{alert(NumeroCuatro)}
-				}//else del tre
+				//}//else del tre
 	}//else del dos
 
 	}//else del uno

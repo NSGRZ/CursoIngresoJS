@@ -9,11 +9,11 @@ function mostrar()
 while(respuesta== "si")
 { Numero =prompt("ingrese un numero")
 	Numero =parseInt(Numero)
-	if (numero<0) {
+	if (Numero<0) {
 		negativo=negativo*Numero
 	}
 	else
-		{positivo=positovo+Numero}
+		{positivo=positivo+Numero}
 respuesta=prompt("desea continuar?")
 
 }
