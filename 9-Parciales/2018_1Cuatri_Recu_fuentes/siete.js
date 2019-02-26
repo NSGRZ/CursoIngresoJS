@@ -3,9 +3,11 @@ function mostrar()
 	
 	var Sexo
 	var Notas
+	var NotaBaja
+	var NotaAlta
 	var Acumulador=0
 	var Respuesta=0
-
+	var Promedio=0
 	while(Acumulador<5)
 	{Acumulador=Acumulador+1
 	 Notas=prompt("ingrese Nota")
@@ -14,15 +16,23 @@ function mostrar()
 	 {
 	 Notas=prompt("incorrecto ingrese Nota")
 	 Notas=parseInt(Notas)
+	 Respuesta= Notas+Respuesta
+
 	 }
 	 sexo=prompt("ingrese Sexo")
 	 while(sexo!="f"&& sexo !="m")
 	 	{	 sexo=prompt("incorrecto ingrese Sexo")}
-
-	}//whiles
+	
+	}//whiles para cargar datos
 
 	alert(Notas+sexo)
 
+	if(Acumulador==5)  // ifs para modificar Datos
+	{
+		
+		 Promedio=(Respuesta)/5
+		alert(Promedio)
+	}
 
 }
 
