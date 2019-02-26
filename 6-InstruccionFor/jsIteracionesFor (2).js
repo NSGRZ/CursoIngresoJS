@@ -18,6 +18,8 @@
 		{console.log("no es primo");}
 */
 
+	/*
+
 	for(Recorrido=NumeroIngresado-1;Recorrido>1;Recorrido--)//aca se hace el recorrido de los 
 																					//numero que hare
 	{
@@ -38,6 +40,10 @@ if(NumeroAnterior==1) //si sale del for es porque no era divisible por 1
 
 
 	}//primerFOR
+
+
+*/
+
 
 
 
