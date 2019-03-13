@@ -7,27 +7,24 @@ function mostrar()
 	var negativo=0;
 	var positivo=0;
 	var numero
-	var resto
 	//declarar contadores y variables 
 	
 	var respuesta="si";
 
 	while(respuesta!="no")
 	{
-		numero=prompt("ingrese un numero que no sea 0")
+		numero=prompt("ingrese un numero")
 		numero=parseInt(numero)
 if(numero<0)
 {
 	negativo=negativo+numero
 	contadorNegativo=contadorNegativo+1
-	resto=numero%2
 		
 }
 else {if(numero>0)
 {	
 	positivo=positivo+numero
 	contadorpositivo=contadorpositivo+1
-	resto=numero%2
 
 }
 else{if(numero==0)
@@ -61,9 +58,6 @@ if(negativo<0 && positivo>0)
 }
 if(numero==0)
 {alert("cantidad de 0 :"+contadorCero)}
-
-if(resto == 0)
-	{ alert(numero+"es par")}
 
 
 }//FIN DE LA FUNCIÓN
